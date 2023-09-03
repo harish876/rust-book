@@ -1,0 +1,4 @@
+carModel,manual,color,style
+Audi,NOT NULL,"blue,green","old"
+key21,TRUE,blue,
+key31,NULL,yellow,
