@@ -13,7 +13,7 @@ struct User {
 #[tokio::main]
 async fn main() -> Result<(), sqlx::Error> {
     let mut conn: PgConnection =
-        PgConnection::connect("postgres://girish:Harish@2023@localhost:5432/users").await?;
+        PgConneSction::connect("postgres://girish:Harish@2023@localhost:5432/users").await?;
 
     let mut select: sql::Select = sql::Select::new()
         .select("id,name")
